@@ -1,10 +1,10 @@
-Getting Started with Ocre
-==========================
+Getting Started Building Ocre Containers
+========================================
 This repository contains materials and sample code for building Ocre containers.
 
 
 ## Prerequisites 
-The Ocre toolchain for C/C++ is provided as a Docker container image. This requires Docker Desktop or similar to be installed on your development machine. This can be run interactively or as a Dev Container which can be used with Visual Studio Code. For use with Visual Studio Code, the Dev Containers extension is required.
+The Ocre toolchain for C/C++ is provided as a Docker container image. It requires Docker Desktop or something similar to be installed on your development machine. The image can be run interactively or as a Dev Container, which can be used with Visual Studio Code. The Dev Containers extension is required for use with Visual Studio Code.
 
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. [VS Code](https://code.visualstudio.com/)
@@ -13,7 +13,7 @@ The Ocre toolchain for C/C++ is provided as a Docker container image. This requi
 **Note:** The dev container can also be run directly in GitHub via [CodeSpaces](https://docs.github.com/en/codespaces).
 
 ### Development with Visual Studio Code
-A Development container, or dev container, is a Docker containers specifically configured to provide a complete development environment. When working with a dev container, the VS Code editor runs locally on your development machine and the Ocre toolchain runs within the container. 
+A Development container, or dev container, is a Docker container specifically configured to provide a complete development environment. When working with a dev container, the VS Code editor runs locally on your development machine and the Ocre toolchain runs within the container. 
 
 To develop with a dev container follow these steps:
 1. Install all of the prerequisites as specified above
@@ -55,14 +55,14 @@ make
 
 ## Running Samples
 
-To load, and subsequently run the sample container we need to create a container from the image created in the step above, then load that container on our Ocre-enabled board.
+To load, and subsequently run the sample, we need to create a container from the container image produced in the step above. Next, we'll then load that container on our Ocre-enabled board.
 
 1. Create the container using the following command
 ```sh
 example
 ```
 
-2. Load the container on to your board.
+2. Load the container onto your board.
 
 ```sh
 example
