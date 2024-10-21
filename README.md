@@ -37,8 +37,8 @@ docker run --rm -it -v $(pwd):/home/ocre ocre/ocre-c-toolchain:latest
 Each sample project in this repository consists of the following components:
 
 1. **Application source file** (in C): Contains the main logic of the sample application.
-2. **Container manifest file**: Defines the container configuration and runtime settings.
-3. **CMakeLists.txt**: Specifies how to build the project using CMake.
+2. **CMakeLists.txt**: Specifies how to build the project using CMake.
+3. **Container manifest file**: Defines the container configuration and runtime settings.
 4. **Build configuration file**: Contains specific build settings for the Ocre toolchain.
 
 ## Building and Running Samples
