@@ -51,14 +51,11 @@ make
 
 To load, and subsequently run the sample, we first need to create a container from the container image produced in the step above.
 
-1. Create the container using the following command.
 ```sh
 example
 ```
 ### Load the Container
 Next, we'll then load that container on our Ocre-enabled board.
-
-1. Load the container using the following command.
 
 ```sh
 example
