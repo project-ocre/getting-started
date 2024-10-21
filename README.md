@@ -34,7 +34,7 @@ docker run --rm -it -v $(pwd):/home/ocre ocre/ocre-c-toolchain:latest
 
 ## Sample Applications
 
-To get started building your first Ocre conainer using the provided samples, simply clone the [`getting-started`](https://github.com/project-ocre/getting-started) repo and follow the steps below.
+To get started building your first Ocre container using the provided samples, simply clone this repo and follow the steps below.
 
 ### Building
 To build a sample, simply navigate to the desired sample and run the following
