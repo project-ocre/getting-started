@@ -47,20 +47,13 @@ make
 ```
 **Note:** This will create a container image called `<sample_name>.nbx`
 
-### Create an Ocre container
-
-To load, and subsequently run the sample, we first need to create a container from the container image produced in the step above.
-
-```sh
-example
-```
 ### Load the Container
-Next, we'll then load that container on our Ocre-enabled board.
+Next, we'll then load the container we built previously on our Ocre-enabled board.
 
 ```sh
 example
 ```
-Congrats, you have now built and ran your first Ocre container!
+Congrats, you have now built and run your first Ocre container!
 
 ## Further Information
 
