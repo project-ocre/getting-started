@@ -32,7 +32,7 @@ docker run --rm -it -v $(pwd):/home/ocre ocre/ocre-c-toolchain:latest
 
 **Note:** Additional documentation and a step-by-step guide for working with dev containers can be found [here](https://code.visualstudio.com/docs/remote/containers-tutorial).
 
-## Building and Running Samples
+## Building Samples
 
 1. To build a sample, simply navigate to the desired sample and run the following
 
