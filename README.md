@@ -32,9 +32,12 @@ docker run --rm -it -v $(pwd):/home/ocre ocre/ocre-c-toolchain:latest
 
 **Note:** Additional documentation and a step-by-step guide for working with dev containers can be found [here](https://code.visualstudio.com/docs/remote/containers-tutorial).
 
-## Building Samples
+## Sample Applications
 
-1. To build a sample, simply navigate to the desired sample and run the following
+To get started building your first Ocre conainer using the provided samples, simply clone the [`getting-started`](https://github.com/project-ocre/getting-started) repo and follow the steps below.
+
+### Building
+To build a sample, simply navigate to the desired sample and run the following
 
 
 ```sh
@@ -44,22 +47,25 @@ make
 ```
 **Note:** This will create a container image called `<sample_name>.nbx`
 
-## Running Samples
+### Create an Ocre container
 
-To load, and subsequently run the sample, we need to create a container from the container image produced in the step above. Next, we'll then load that container on our Ocre-enabled board.
+To load, and subsequently run the sample, we first need to create a container from the container image produced in the step above.
 
-1. Create the container using the following command
+1. Create the container using the following command.
 ```sh
 example
 ```
+### Load the Container
+Next, we'll then load that container on our Ocre-enabled board.
 
-2. Load the container onto your board.
+1. Load the container using the following command.
 
 ```sh
 example
 ```
+Congrats, you have now built and ran your first Ocre container!
 
-## Further Information and Advanced Usage
+## Further Information
 
 For more detailed information on Ocre containers, including:
 - Detailed explanations of container components
