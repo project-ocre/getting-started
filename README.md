@@ -32,15 +32,6 @@ docker run --rm -it -v $(pwd):/home/ocre ocre/ocre-c-toolchain:latest
 
 **Note:** Additional documentation and a step-by-step guide for working with dev containers can be found [here](https://code.visualstudio.com/docs/remote/containers-tutorial).
 
-## Sample Structure
-
-Each sample project in this repository consists of the following components:
-
-1. **Application source file** (in C): Contains the main logic of the sample application.
-2. **CMakeLists.txt**: Specifies how to build the project using CMake.
-3. **Container manifest file**: Defines the container configuration and runtime settings.
-4. **Build configuration file**: Contains specific build settings for the Ocre toolchain.
-
 ## Building and Running Samples
 
 1. To build a sample, simply navigate to the desired sample and run the following
@@ -67,3 +58,13 @@ example
 ```sh
 example
 ```
+
+## Further Information and Advanced Usage
+
+For more detailed information on Ocre containers, including:
+- Detailed explanations of container components
+- Instructions for building and running additional samples
+- Advanced configuration options
+- Best practices for Ocre container development
+
+Please visit our comprehensive documentation at [https://docs.project-ocre.org/](https://docs.project-ocre.org/).
