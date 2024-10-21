@@ -1,0 +1,16 @@
+# Copyright (C) 2022 Ocre Incorporated.  All rights reserved.
+# Ocre Container Appplication File
+
+version: '3'
+
+services:
+
+  hello-world_service:
+    image: hello-world:latest 
+    resource:
+      heapSize: 4096
+    environment:
+      - ENV="NULL"
+      
+    
+

@@ -1,0 +1,17 @@
+# Copyright © 2024 Contributors to Project Ocre, which has been established as Project Ocre a Series of LF Projects, LLC.
+# Distributed by an Apache 2.0 License.
+
+# Ocre container image definition
+
+version: '1'
+
+name: blinky
+binaries:
+  - path: build/blinky.wasm
+
+config:
+  environment:
+    - INTERVAL=500
+  permissions:
+    - console
+    - LED
