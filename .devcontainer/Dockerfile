@@ -1,4 +1,4 @@
 # [Parameters] 
 # Select the version of the WASM toolchain
 ARG VERSION="20.0"
-FROM ghcr.io/ocre/ocre-c-toolchain:latest
+FROM ghcr.io/atym-io/atym-c-toolchain:latest
