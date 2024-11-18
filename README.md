@@ -27,7 +27,7 @@ The VS Code window will then reload, but since the container does not exist yet,
 The toolchain container can also be launched and used interactively as follows:
 ```
 cd samples
-docker run --rm -it -v $(pwd):/home/ocre ocre/ocre-c-toolchain:latest
+docker run --rm -it -v $(pwd):/home/ocre ghcr.io/atym-io/atym-c-toolchain:latest
 ```
 
 **Note:** Additional documentation and a step-by-step guide for working with dev containers can be found [here](https://code.visualstudio.com/docs/remote/containers-tutorial).
@@ -47,13 +47,6 @@ make
 ```
 **Note:** This will create a container image called `<sample_name>.nbx`
 
-### Load the Container
-Next, we'll then load the container we built previously on our Ocre-enabled board.
-
-```sh
-example
-```
-Congrats, you have now built and run your first Ocre container!
 
 ## Further Information
 
