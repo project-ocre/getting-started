@@ -37,7 +37,7 @@ Opening a terminal will give you console access to the container environment. Fr
 The toolchain container can also be launched and used *interactively* as follows, without the need for VS Code:
 ```
 cd samples
-docker run --rm -it -v $(pwd):/home/atym ghcr.io/atym-io/atym-c-toolchain:latest
+docker run --rm -it -v $(pwd):/home/ocre ghcr.io/atym-io/atym-c-toolchain:latest
 ```
 
 ## Building the Samples
