@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 
-
 //Ocre  container entrypoint
 void on_init()
 {

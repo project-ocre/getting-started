@@ -45,7 +45,7 @@ mkdir build && cd build
 cmake -DWASI_SDK_DIR=/opt/wasi-sdk -DCMAKE_TOOLCHAIN_FILE=/opt/wamr-sdk/app-sdk/wamr_toolchain.cmake ..
 make
 ```
-**Note:** This will create a container image called `<sample_name>.nbx`
+**Note:** This will create a container image called `sample_name.wasm`
 
 
 ## Further Information
