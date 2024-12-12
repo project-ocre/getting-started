@@ -1,4 +1,6 @@
-# Copyright (C) 2022 Ocre Incorporated.  All rights reserved.
+# Copyright © 2024 Contributors to Project Ocre, which has been established as Project Ocre a Series of LF Projects, LLC.
+# Distributed by an Apache 2.0 License.
+
 # Ocre Container Appplication File
 
 version: '3'
@@ -11,6 +13,3 @@ services:
       heapSize: 4096
     environment:
       - ENV="NULL"
-      
-    
-

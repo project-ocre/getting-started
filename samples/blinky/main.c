@@ -4,11 +4,9 @@
 */
 
 #include <stdio.h>
-
 #include "wa-inc/timer_wasm_app.h"
 
 void update_led(user_timer_t timer) {
-  //nbx_toggle_led();
   printf(".\n");
 }
 
