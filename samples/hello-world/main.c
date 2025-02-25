@@ -3,9 +3,9 @@
  * Distributed by an Apache 2.0 License.
  */
 
- #include <stdio.h>
+#include <stdio.h>
 
- int main() 
+int main() 
  {
     printf("\
          ██     ██ ███████ ██████   █████  ███████ ███████ ███████ ███    ███ ██████  ██   ██    ██ \n\
