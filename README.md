@@ -21,7 +21,7 @@ Please install all of the following prerequisites if you intend to use the dev c
 
 To develop with the Ocre dev container using VS Code follow these steps:
 
-1. Install all of the mentioned pre-requesites
+1. Install all of the mentioned pre-requisites
 2. Clone the [`project-ocre/getting-started`](https://github.com/project-ocre/project-ocre.github.io) repository locally
 3. Start VS Code
 4. Run the `Dev Containers: Open Folder in Container...` from the Command Palette (`Cmd + Shift + P` for Mac, or `Ctrl + Shift + P` for Windows).
@@ -46,7 +46,7 @@ Each of the sample applications has a CMake file and can be built as follows:
 ```
 cd samples/sample_name
 mkdir build && cd build
-cmake -DWASI_SDK_DIR=/opt/wasi-sdk -DCMAKE_TOOLCHAIN_FILE=/opt/wamr-sdk/app-sdk/wamr_toolchain.cmake ..
+cmake ..
 make
 ```
 
