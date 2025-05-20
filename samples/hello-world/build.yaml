@@ -7,7 +7,7 @@ version: '1'
 
 name: hello-world 
 binaries:
-  - path: hello-world.wasm
+  - path: build/hello-world.wasm
 
 config:
   environment:
