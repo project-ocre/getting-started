@@ -11,6 +11,4 @@ binaries:
 
 config:
   environment:
-    - Message
   permissions:
-    - console

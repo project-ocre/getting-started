@@ -11,7 +11,4 @@ binaries:
 
 config:
   environment:
-    - INTERVAL=500
   permissions:
-    - console
-    - LED

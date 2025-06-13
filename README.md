@@ -1,31 +1,29 @@
 Getting Started Building Ocre Containers
 ========================================
 
-This repository contains materials and sample code for building Ocre containers, including the Ocre toolchain for C/C++ via a **dev container**.
+This repository contains materials and sample code for building Ocre containers, including the Ocre toolchain for C/C++ via a **dev container**, , which can also be run in VSCode or interactively.
 
-[Dev containers](https://code.visualstudio.com/docs/remote/containers-tutorial) are essentially a Docker container image that is specifically configured to provide a complete development environment. When working with this dev container, it will run locally on your development machine (via VS Code) and the Ocre toolchain runs within that container. 
+## Getting Started
 
-**Note:** The included dev container can also be run interactively, without the need for VSCode.
+First, clone this repository with submodules:
+```bash
+git clone --recursive https://github.com/project-ocre/getting-started.git
+```
+Or if you already cloned without submodules:
+```bash
+git submodule update --init --recursive
+```
 
-## Prerequisites
-
-Please install all of the following prerequisites if you intend to use the dev contianer within VS Code. Alternatively, if you're only planning on running the dev container locally you only need to install **Docker Desktop**.
-
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) Extension in VSCode
+**Why submodules?** This repository includes the [OCRE SDK](https://github.com/project-ocre/ocre-sdk) as a submodule, which provides the C API definitions (like GPIO, sensors, timers, and messaging) needed to build applications with Ocre. The `--recursive` flag ensures you get both this repository and the SDK headers.
 
 ---
 
 ### Development with Visual Studio Code
-
-To develop with the Ocre dev container using VS Code follow these steps:
-
-1. Install all of the mentioned pre-requisites
-2. Clone the [`project-ocre/getting-started`](https://github.com/project-ocre/project-ocre.github.io) repository locally
-3. Start VS Code
-4. Run the `Dev Containers: Open Folder in Container...` from the Command Palette (`Cmd + Shift + P` for Mac, or `Ctrl + Shift + P` for Windows).
-5. Select the folder containing the cloned repository.
+To develop with the Atym dev container using VS Code follow these steps:
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Visual Studio Code](https://code.visualstudio.com/), and the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) Extension in VSCode.
+2. Start VS Code
+3. Run the `Dev Containers: Open Folder in Container...` from the Command Palette (`Cmd + Shift + P` for Mac, or `Ctrl + Shift + P` for Windows).
+4. Select the folder containing the cloned repository.
 
 The VS Code window will then reload, but since the container does not exist yet, VS Code will create one and clone the sample repository into an isolated container volume. This will take some time and progress will be displayed in the lower right corner of the VS Code window. This step only needs to be done once.
 
@@ -34,10 +32,12 @@ Opening a terminal will give you console access to the container environment. Fr
 ---
 
 ### Interactive Development
-The toolchain container can also be launched and used *interactively* as follows, without the need for VS Code:
+The toolchain container can also be launched and used *interactively* as follows, without the need for VS Code.
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Run the following commands from within the newly cloned `getting-started` repo.
 ```
 cd samples
-docker run --rm -it -v $(pwd):/home/ocre ghcr.io/atym-io/atym-c-toolchain:latest
+docker run --rm -it -v $(pwd):/home/atym ghcr.io/atym-io/atym-c-toolchain:latest
 ```
 
 ## Building the Samples

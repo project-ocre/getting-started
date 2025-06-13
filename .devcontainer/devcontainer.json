@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VERSION' to pick a WASM toolchain version
-		"args": { "VERSION": "24.0" }
+		"args": { "VERSION": "latest" }
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
